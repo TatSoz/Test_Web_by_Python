@@ -1,4 +1,3 @@
-import pytest
 import requests
 import yaml
 
@@ -10,17 +9,10 @@ with open('config.yaml', encoding='utf-8') as f:
 S = requests.Session()
 
 
-@pytest.fixture()
-def correct_word():
-    return 'молоко'
-
-
-@pytest.fixture()
-def incorrect_word():
-    return 'малако'
-
-
-@pytest.fixture()
 def user_login():
-    S.post(url=address, data={'username': username, 'password': password})
+    rest1 = S.post(url=address, data={'username': username, 'password': password})
     return rest1.json()
+
+
+print(user_login())
+

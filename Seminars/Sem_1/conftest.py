@@ -26,6 +26,6 @@ def user_login():
 
 @pytest.fixture()
 def post_title():
-    return 'test postman'
+    return 'Море'
 
 
