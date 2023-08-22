@@ -6,8 +6,8 @@ S = requests.Session()
 
 
 def get_sizes(lat, long, radius, limit=100):
-    url = "https://en.wikipedia.org/w/api.php"
-    params = {
+    URL = "https://en.wikipedia.org/w/api.php"
+    PARAMS = {
         "format": "json",
         "list": "geosearch",
         "gscoord": f"{lat}|{long}",
@@ -16,12 +16,12 @@ def get_sizes(lat, long, radius, limit=100):
         "action": "query"
     }
 
-    r = S.get(url=url, params=params)
+    r = S.get(url=URL, params=PARAMS)
     pages = r.json()
     places = pages['query']['geosearch']
-
     return [i['title'] for i in places]
 
 
 def test_step1(coordinates, text):
     assert text in get_sizes(coordinates[0], coordinates[1], 100), 'Not found'
+
