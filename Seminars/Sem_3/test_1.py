@@ -10,7 +10,6 @@ with open('testdata.yaml') as f:
 
 
 def test_login_invalid_user(browser):
-    """Негативный тест попытки входа на сайт несуществующим пользователем"""
     logging.info('Test 1 is starting')
     testpage = OperationsHelper(browser)
     testpage.go_to_site()
@@ -23,7 +22,6 @@ def test_login_invalid_user(browser):
 
 
 def test_valid_login(browser):
-    """Позитивный тест входа на сайт"""
     logging.info('Test 2 is starting')
     testpage = OperationsHelper(browser)
     testpage.go_to_site()
@@ -36,7 +34,6 @@ def test_valid_login(browser):
 
 
 def test_add_post(browser):
-    """Позитивный тест добавления поста"""
     logging.info('Test 3 is starting')
     testpage = OperationsHelper(browser)
 
@@ -52,3 +49,6 @@ def test_add_post(browser):
     time.sleep(testdata['sleep_time'])
 
     assert testpage.get_post_title() == testdata['post_title'], 'Test 3 failed'
+
+
+

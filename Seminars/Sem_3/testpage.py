@@ -29,6 +29,7 @@ class TestSearchLocators:
     LOCATOR_SAVE_POST_BTN = (By.CSS_SELECTOR, '.mdc-button__label')
 
 
+
 class OperationsHelper(BasePage):
     """Класс, содержащий методы для работы с элементами на веб-страницах"""
     def enter_login(self, word):
