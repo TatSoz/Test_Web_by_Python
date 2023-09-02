@@ -1,0 +1,11 @@
+address: https://test-stand.gb.ru
+#driver_path: chromedriver.exe
+browser: firefox
+sleep_time: 5
+implicitly_wait: 3
+username: VolkIrina
+password: b9b6ba5f0e
+post_title: New post_test
+post_description: New post_description
+post_content: Study Selenium
+
