@@ -1,4 +1,4 @@
-from BaseApp import BasePage
+from Seminars.Sem_4.BaseApp import BasePage
 from selenium.webdriver.common.by import By
 import logging
 

@@ -1,0 +1,19 @@
+address: https://test-stand.gb.ru
+driver_path: chromedriver.exe
+browser: chrome
+sleep_time: 2
+implicitly_wait: 3
+username: VolkIrina
+password: b9b6ba5f0e
+post_title: New post_test
+post_description: New post_description
+post_content: Study Selenium
+email: volk@ya.ru
+content_to_contact_us: Test4
+log_email: None
+log_email_pass: None
+log_name: log.txt
+report_name: report.html
+
+
+
